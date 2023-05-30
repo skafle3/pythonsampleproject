@@ -5,7 +5,9 @@ FROM python:3.9
 WORKDIR /app
 
 # Copy the Python script to the working directory
-COPY serv.py .
+COPY . .
+
+RUN pip install flask
 
 # Expose the port on which the app will run
 EXPOSE 8080
