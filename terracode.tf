@@ -31,7 +31,7 @@ resource "aws_security_group" "web_sg" {
 }
 
 resource "aws_instance" "web_instance" {
-  ami           = "ami-12345678"  # Update with your desired AMI ID
+  ami           = "ami-0715c1897453cabd1"  # Update with your desired AMI ID
   instance_type = "t2.micro"      # Update with your desired instance type
 
   vpc_security_group_ids = [aws_security_group.web_sg.id]
